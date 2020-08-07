@@ -34,7 +34,9 @@ describe('SalarySubmitForm.vue', () => {
       localVue,
       vuetify
     });
-    wrapper.vm.value = value;
+    wrapper.setData({
+      value
+    });
     wrapper.vm.submitHandler();
     wrapper.vm.$nextTick(() => {
       expect(wrapper.vm.submitted).to.be.true;
@@ -50,8 +52,10 @@ describe('SalarySubmitForm.vue', () => {
       localVue,
       vuetify
     });
-    wrapper.vm.submitted = true;
-    wrapper.vm.value = value;
+    wrapper.setData({
+      submitted: true,
+      value
+    });
     wrapper.vm.reset();
     wrapper.vm.$nextTick(() => {
       expect(wrapper.vm.submitted).to.be.false;
