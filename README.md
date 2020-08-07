@@ -1,4 +1,4 @@
-# negociation-app
+# negotiation-app
 
 ## Project setup
 

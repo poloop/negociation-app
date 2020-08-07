@@ -3,7 +3,7 @@
 describe('Application', () => {
   it('Visits the app root url', () => {
     cy.visit('/');
-    cy.contains('h1', 'Negociation Application');
+    cy.contains('h1', 'Negotiation Application');
   });
   it('must have two tabs', () => {
     cy.visit('/');
