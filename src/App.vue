@@ -35,7 +35,7 @@
         </v-row>
       </v-container>
     </v-main>
-    <v-dialog v-model="displayResult" max-width="290" light>
+    <v-dialog v-model="displayResult" max-width="290" light id="resultDialog">
       <v-card-title class="headline">{{ result }}</v-card-title>
       <v-card-text>
         <p>Maximum offer was {{ parts.employer.value }}</p>
