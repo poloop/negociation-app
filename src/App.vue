@@ -51,6 +51,7 @@ import SalarySubmitForm from './components/SalarySubmitForm';
 import axios from './plugins/axios';
 
 const WEATHER_API = 'https://api.openweathermap.org/data/2.5/weather';
+// Just for the test, it would be preferable to set the API KEY in a .env file not store in the repository
 const WEATHER_API_KEY = '7ccfcacaba49ffe1e92e7c1028ab8ef9';
 
 export default {
@@ -83,7 +84,6 @@ export default {
         return [this.parts.employer, this.parts.employee].every(({ value }) => value !== null);
       },
       set: function(value) {
-        console.log('SET DISPLAY RESULT', value);
         if (!value) {
           this.resetValues();
         }
